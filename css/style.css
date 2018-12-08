@@ -1,12 +1,15 @@
 body {
   font-family: "PT Sans", sans-serif;
   color: #222;
+  margin: 0;
 }
 
 h1 {
   font-family: "Adamina", serif;
   color: white;
-  background-color: rgb(3,47,91)
+  background-color: rgb(3,47,91);
+  margin-top: 0;
+  padding: 5px;
 }
 
 header {
@@ -16,6 +19,19 @@ header {
 header p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 2px;
+}
+
+article + article {
+  margin-top: 20px;
+}
+
+ul {
+  margin-top: 5px;
 }
 
 nav li {
@@ -38,7 +54,7 @@ header img {
 }
 
 h2 {
-  font-family: "PT Sans", sans-serif;
+  font-family: "Adamina", serif;
   color: white;
   background-color: rgb(3,47,91);
   padding: 2px 10px;
@@ -60,8 +76,8 @@ h2 {
   margin-left: 10px;
 }
 
-a {
-  color: blue;
+#wrapper a {
+  color: rgb(3,47,91);
 }
 
 a:active {
@@ -69,9 +85,78 @@ a:active {
 }
 
 a:visited {
-  color: purple;
+  color: #666;
 }
 
 a:hover {
-  color: grey;
+  color: #333;
+}
+
+#site-navigation {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#site-navigation ul {
+  text-align: center;
+  display: block;
+  padding: 10px 0 5px;
+  background-color: rgb(3,47,91);
+  max-width: 960px;
+}
+
+#site-navigation .nav-item {
+  color: white;
+  text-decoration: underline;
+}
+
+#site-navigation li {
+  display: inline-block;
+  padding:0 20px;
+}
+
+#site-navigation li + li {
+  border-left: 1px solid white;
+}
+
+#site-navigation ul:after {
+  content: '';
+  border-bottom: 1px solid white;
+  width: 60%;
+  margin: 15px auto 0;
+  height: 0;
+  display: block;
+}
+
+.home #site-navigation ul:after{
+  display: none;
+}
+
+#gridhome {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0;
+}
+
+#site-navigation h1 {
+  margin-bottom: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 10px;
+  font-size: 25px;
+}
+
+.home #site-navigation ul {
+  padding: 16px 0;
+  box-sizing: border-box;
+}
+
+.home #wrapper {
+  margin-top: 10px;
+}
+
+.carousel {
+  max-width: 480px;
 }
