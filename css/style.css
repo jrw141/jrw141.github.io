@@ -138,7 +138,8 @@ a:hover {
   display: none;
 }
 
-.gridhome {
+.gridhome,
+.gridreporting {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 0;
@@ -166,7 +167,8 @@ a:hover {
   max-width: 480px;
 }
 
-.homepageinfo {
+.homepageinfo,
+.reportinginfo {
   text-align: center;
   display: inline-block;
   vertical-align: middle;
@@ -183,6 +185,7 @@ a:hover {
 .home .left {
   background-color: #ddd;
   margin-bottom: 35px;
+  padding: 5px 10px;
   display: flex;
 }
 
@@ -192,7 +195,7 @@ span.nav-item:hover{
 
 #biophoto,
 .biophoto {
-  margin-top: 55px;
+  margin-top: 0;
 }
 
 #bioinfo p,
@@ -206,4 +209,21 @@ span.nav-item:hover{
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+}
+
+.bioinfo h3 {
+  margin-top: 0;
+}
+
+.flexhome {
+  display: flex;
+}
+
+.flexhome .left,
+.flexhome .right {
+  flex: 1 0;
+}
+
+.flexhome .left {
+   margin-bottom: 5px;
 }
