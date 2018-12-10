@@ -227,3 +227,7 @@ span.nav-item:hover{
 .flexhome .left {
    margin-bottom: 5px;
 }
+
+figure {
+    margin: 0;
+}
