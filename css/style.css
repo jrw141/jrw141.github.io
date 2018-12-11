@@ -167,8 +167,7 @@ a:hover {
   max-width: 480px;
 }
 
-.homepageinfo,
-.reportinginfo {
+.homepageinfo {
   text-align: center;
   display: inline-block;
   vertical-align: middle;
@@ -183,7 +182,7 @@ a:hover {
 }
 
 .home .left {
-  background-color: #ddd;
+  background-color: #f1f3f4;
   margin-bottom: 35px;
   padding: 5px 10px;
   display: flex;
@@ -215,19 +214,76 @@ span.nav-item:hover{
   margin-top: 0;
 }
 
-.flexhome {
+.flexhome,
+.flexreporting {
   display: flex;
 }
 
 .flexhome .left,
-.flexhome .right {
+.flexhome .right,
+.flexreporting .left,
+.flexreporting .right {
   flex: 1 0;
 }
 
-.flexhome .left {
+.flexhome .left,
+.flexreporting .left {
    margin-bottom: 5px;
 }
 
 figure {
     margin: 0;
+}
+
+.reporting .wrapper,
+.play-by-play .wrapper {
+  margin-top: 5px;
+}
+
+.reporting h3 {
+  color: rgb(3,47,91);
+  font-family: "Adamina", serif;
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 1px solid rgb(3,47,91);
+  padding-bottom: 3px;
+  margin-right: 10px;
+}
+
+.flexreporting .left {
+  margin-bottom: 0;
+}
+
+.flexreporting .description,
+.play-by-play .description {
+    background-color: #f1f3f4;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
+.play-by-play iframe,
+.reporting iframe {
+  border: none;
+}
+
+.play-by-play iframe {
+  margin-bottom: -5px;
+}
+
+.play-by-play audio {
+  width: 100%;
+  background-color: #f1f3f4;
+  margin-bottom: -5px;
+}
+
+.play-by-play .description {
+  padding: 15px 10px 20px 22px;
+  margin-top: 0;
+}
+
+.reporting .courtesy {
+  margin-top: 15px;
+  color: #666;
+  font-family: "Adamina", serif;
+  font-size: 12px;
 }
